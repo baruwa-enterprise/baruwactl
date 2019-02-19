@@ -1,6 +1,10 @@
 # baruwactl
 
-## A command line tool for the Baruwa REST API 
+## A command line tool for the Baruwa REST API
+
+This tool provides commandline access to manage a [Baruwa](https://www.baruwa.com/)
+server using the [REST API](https://www.baruwa.com/docs/api/). It is built using the
+[Baruwa Golang bindings](https://github.com/baruwa-enterprise/baruwa-go).
 
 [![Build Status](https://travis-ci.org/baruwa-enterprise/baruwactl.svg?branch=master)](https://travis-ci.org/baruwa-enterprise/baruwactl)
 [![codecov](https://codecov.io/gh/baruwa-enterprise/baruwactl/branch/master/graph/badge.svg)](https://codecov.io/gh/baruwa-enterprise/baruwactl)

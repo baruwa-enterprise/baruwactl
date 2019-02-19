@@ -23,7 +23,7 @@ type CLI struct {
 
 // NewCLI initializes new command line interface
 func NewCLI() *CLI {
-	c := &CLI{cli.App("baruwa", "A cmdline client for the Baruwa REST API.")}
+	c := &CLI{cli.App("baruwactl", "A cmdline client for the Baruwa REST API.")}
 	c.Spec = "-k -s"
 
 	apiToken = c.String(cli.StringOpt{

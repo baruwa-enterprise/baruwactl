@@ -9,8 +9,9 @@
 [![MPLv2 License](https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square)](https://www.mozilla.org/MPL/2.0/)
 
 This tool provides commandline access to manage a [Baruwa](https://www.baruwa.com/)
-server using the [REST API](https://www.baruwa.com/docs/api/). It is built using the
-[Baruwa Golang bindings](https://github.com/baruwa-enterprise/baruwa-go).
+server via the [REST API](https://www.baruwa.com/docs/api/).
+
+It is built using the [Baruwa Golang bindings](https://github.com/baruwa-enterprise/baruwa-go).
 
 ```
 Usage: baruwactl -k -s COMMAND [arg...]

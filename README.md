@@ -1,15 +1,15 @@
-# baruwa-go
+# baruwactl
 
-## Golang bindings for the Baruwa REST API
+## A command line tool for the Baruwa REST API 
 
-[![Build Status](https://travis-ci.org/baruwa-enterprise/baruwa-go.svg?branch=master)](https://travis-ci.org/baruwa-enterprise/baruwa-go)
-[![codecov](https://codecov.io/gh/baruwa-enterprise/baruwa-go/branch/master/graph/badge.svg)](https://codecov.io/gh/baruwa-enterprise/baruwa-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/baruwa-enterprise/baruwa-go)](https://goreportcard.com/report/github.com/baruwa-enterprise/baruwa-go)
-[![GoDoc](https://godoc.org/github.com/baruwa-enterprise/baruwa-go?status.svg)](https://godoc.org/github.com/baruwa-enterprise/baruwa-go)
+[![Build Status](https://travis-ci.org/baruwa-enterprise/baruwactl.svg?branch=master)](https://travis-ci.org/baruwa-enterprise/baruwactl)
+[![codecov](https://codecov.io/gh/baruwa-enterprise/baruwactl/branch/master/graph/badge.svg)](https://codecov.io/gh/baruwa-enterprise/baruwactl)
+[![Go Report Card](https://goreportcard.com/badge/github.com/baruwa-enterprise/baruwactl)](https://goreportcard.com/report/github.com/baruwa-enterprise/baruwactl)
+[![GoDoc](https://godoc.org/github.com/baruwa-enterprise/baruwactl?status.svg)](https://godoc.org/github.com/baruwa-enterprise/baruwactl)
 [![MPLv2 License](https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square)](https://www.mozilla.org/MPL/2.0/)
 
 ```
-Usage: baruwa -k -s COMMAND [arg...]
+Usage: baruwactl -k -s COMMAND [arg...]
 
 A cmdline client for the Baruwa REST API.
                      
@@ -26,7 +26,7 @@ Commands:
   organizations      list organizations
   systemstatus       show system status
                      
-Run 'baruwa COMMAND --help' for more information on a command.
+Run 'baruwactl COMMAND --help' for more information on a command.
 ```
 
 ## Requirements
@@ -36,7 +36,7 @@ Run 'baruwa COMMAND --help' for more information on a command.
 ## Installation
 
 ```console
-$ go get github.com/baruwa-enterprise/baruwa-go
+$ go get github.com/baruwa-enterprise/baruwactl
 ```
 
 ## Testing
@@ -45,7 +45,7 @@ $ go get github.com/baruwa-enterprise/baruwa-go
 
 ## Contributing
 
-1. Fork it (https://github.com/baruwa-enterprise/baruwa-go/fork)
+1. Fork it (https://github.com/baruwa-enterprise/baruwactl/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -55,4 +55,4 @@ $ go get github.com/baruwa-enterprise/baruwa-go
 ## License
 
 All code is licensed under the
-[MPLv2 License](https://github.com/baruwa-enterprise/baruwa-go/blob/master/LICENSE).
+[MPLv2 License](https://github.com/baruwa-enterprise/baruwactl/blob/master/LICENSE).

@@ -11,7 +11,7 @@ package main
 import (
 	"os"
 
-	"github.com/baruwa-enterprise/baruwa-go/cmd"
+	"github.com/baruwa-enterprise/baruwactl/cmd"
 )
 
 func main() {

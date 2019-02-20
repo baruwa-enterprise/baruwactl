@@ -98,8 +98,9 @@ func ldapCreate(cmd *cli.Cmd) {
 		Desc: "Bind DN",
 	})
 	bindpw = cmd.String(cli.StringOpt{
-		Name: "bind-password",
-		Desc: "Bind Password",
+		Name:   "bind-password",
+		Desc:   "Bind Password",
+		EnvVar: "BARUWA_BIND_PASSWORD",
 	})
 	searchfilter = cmd.String(cli.StringOpt{
 		Name: "search-filter",
@@ -210,6 +211,7 @@ func ldapUpdate(cmd *cli.Cmd) {
 	bindpw = cmd.String(cli.StringOpt{
 		Name:      "bind-password",
 		Desc:      "Bind Password",
+		EnvVar:    "BARUWA_BIND_PASSWORD",
 		SetByUser: &bindpwSet,
 	})
 	searchfilter = cmd.String(cli.StringOpt{

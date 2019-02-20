@@ -78,12 +78,14 @@ func userCreate(cmd *cli.Cmd) {
 		Desc: "The last names",
 	})
 	password1 = cmd.String(cli.StringOpt{
-		Name: "password1",
-		Desc: "The account Password",
+		Name:   "password1",
+		Desc:   "The account Password",
+		EnvVar: "BARUWA_ACCOUNT_PASSWORD",
 	})
 	password2 = cmd.String(cli.StringOpt{
-		Name: "password2",
-		Desc: "Retype account Password",
+		Name:   "password2",
+		Desc:   "Retype account Password",
+		EnvVar: "BARUWA_ACCOUNT_PASSWORD",
 	})
 	email = cmd.String(cli.StringOpt{
 		Name: "email",

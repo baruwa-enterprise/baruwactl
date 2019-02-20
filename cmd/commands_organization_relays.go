@@ -76,12 +76,14 @@ func organizationRelayCreate(cmd *cli.Cmd) {
 		Desc: "Username",
 	})
 	password1 = cmd.String(cli.StringOpt{
-		Name: "password1",
-		Desc: "Password",
+		Name:   "password1",
+		Desc:   "Password",
+		EnvVar: "BARUWA_RELAY_PASSWORD",
 	})
 	password2 = cmd.String(cli.StringOpt{
-		Name: "password2",
-		Desc: "Retype Password",
+		Name:   "password2",
+		Desc:   "Retype Password",
+		EnvVar: "BARUWA_RELAY_PASSWORD",
 	})
 	description = cmd.String(cli.StringOpt{
 		Name: "description",
@@ -191,11 +193,13 @@ func organizationRelayUpdate(cmd *cli.Cmd) {
 	password1 = cmd.String(cli.StringOpt{
 		Name:      "password1",
 		Desc:      "Password",
+		EnvVar:    "BARUWA_RELAY_PASSWORD",
 		SetByUser: &password1Set,
 	})
 	password2 = cmd.String(cli.StringOpt{
 		Name:      "password2",
 		Desc:      "Retype Password",
+		EnvVar:    "BARUWA_RELAY_PASSWORD",
 		SetByUser: &password2Set,
 	})
 	description = cmd.String(cli.StringOpt{

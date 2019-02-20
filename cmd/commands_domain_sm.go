@@ -79,8 +79,9 @@ func domainSMCreate(cmd *cli.Cmd) {
 		Desc: "Username",
 	})
 	password = cmd.String(cli.StringOpt{
-		Name: "password",
-		Desc: "Password",
+		Name:   "password",
+		Desc:   "Password",
+		EnvVar: "BARUWA_SMARTHOST_PASSWORD",
 	})
 	description = cmd.String(cli.StringOpt{
 		Name: "description",
@@ -162,6 +163,7 @@ func domainSMUpdate(cmd *cli.Cmd) {
 	password = cmd.String(cli.StringOpt{
 		Name:      "password",
 		Desc:      "Password",
+		EnvVar:    "BARUWA_SMARTHOST_PASSWORD",
 		SetByUser: &passwordSet,
 	})
 	description = cmd.String(cli.StringOpt{

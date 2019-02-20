@@ -78,8 +78,9 @@ func radiusCreate(cmd *cli.Cmd) {
 		Desc: "Authentication setting ID",
 	})
 	secret = cmd.String(cli.StringOpt{
-		Name: "secret",
-		Desc: "Radius Secret",
+		Name:   "secret",
+		Desc:   "Radius Secret",
+		EnvVar: "BARUWA_RADIUS_SECRET",
 	})
 	timeout = cmd.Int(cli.IntOpt{
 		Name: "timeout",
@@ -129,8 +130,9 @@ func radiusUpdate(cmd *cli.Cmd) {
 		Desc: "Authentication setting ID",
 	})
 	rid = cmd.Int(cli.IntOpt{
-		Name: "radius-settings-id",
-		Desc: "RADIUS setting ID",
+		Name:   "radius-settings-id",
+		Desc:   "RADIUS setting ID",
+		EnvVar: "BARUWA_RADIUS_SECRET",
 	})
 	secret = cmd.String(cli.StringOpt{
 		Name:      "secret",

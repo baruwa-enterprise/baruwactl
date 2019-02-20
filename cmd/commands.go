@@ -19,6 +19,7 @@ func (c *CLI) RegisterCommands() {
 		cmd.Command("create", "create a new user account", userCreate)
 		cmd.Command("update", "update a user account", userUpdate)
 		cmd.Command("delete", "delete a user account", userDelete)
+		cmd.Command("changepassword", "change a user account password", userChangePassword)
 		cmd.Command("alias", "manage user alias addresses", func(cmd *cli.Cmd) {
 			cmd.Command("show", "show detailed information of an alias address", aliasShow)
 			cmd.Command("create", "create a new alias address", aliasCreate)

@@ -360,6 +360,50 @@ func userDelete(cmd *cli.Cmd) {
 	}
 }
 
+func userChangePassword(cmd *cli.Cmd) {
+	var (
+		uid                  *int
+		err                  error
+		c                    *api.Client
+		f                    *api.PasswordForm
+		password1, password2 *string
+	)
+
+	cmd.Spec = "--id --password1 --password2"
+
+	uid = cmd.Int(cli.IntOpt{
+		Name: "id",
+		Desc: "User ID",
+	})
+	password1 = cmd.String(cli.StringOpt{
+		Name:   "password1",
+		Desc:   "The account Password",
+		EnvVar: "BARUWA_ACCOUNT_PASSWORD",
+	})
+	password2 = cmd.String(cli.StringOpt{
+		Name:   "password2",
+		Desc:   "Retype account Password",
+		EnvVar: "BARUWA_ACCOUNT_PASSWORD",
+	})
+
+	cmd.Action = func() {
+		if c, err = GetClient(); err != nil {
+			log.Fatal(err)
+		}
+
+		f = &api.PasswordForm{
+			Password1: *password1,
+			Password2: *password2,
+		}
+
+		if err = c.ChangeUserPassword(*uid, f); err != nil {
+			log.Fatal(err)
+		}
+
+		fmt.Printf("The user with id: %d's password has been changed\n", *uid)
+	}
+}
+
 func usersList(cmd *cli.Cmd) {
 	var (
 		page    *int

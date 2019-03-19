@@ -40,6 +40,15 @@ Run 'baruwactl COMMAND --help' for more information on a command.
 
 ## Installation
 
+### Binary
+
+Precompiled binaries are available for download on the releases page
+https://github.com/baruwa-enterprise/baruwactl/releases
+
+### Source
+
+To install from source
+
 ```console
 $ go get github.com/baruwa-enterprise/baruwactl
 ```

@@ -42,8 +42,8 @@ Run 'baruwactl COMMAND --help' for more information on a command.
 
 ### Binary
 
-Precompiled binaries are available for download on the releases page
-https://github.com/baruwa-enterprise/baruwactl/releases
+Precompiled binaries are available for download on the
+[releases page](https://github.com/baruwa-enterprise/baruwactl/releases)
 
 ### Source
 

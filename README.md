@@ -34,10 +34,6 @@ Commands:
 Run 'baruwactl COMMAND --help' for more information on a command.
 ```
 
-## Requirements
-
-* Golang 1.10.x or higher
-
 ## Installation
 
 ### Binary
@@ -52,6 +48,10 @@ To install from source
 ```console
 $ go get github.com/baruwa-enterprise/baruwactl
 ```
+
+## Requirements
+
+* Golang 1.10.x or higher
 
 ## Testing
 

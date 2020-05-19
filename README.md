@@ -3,6 +3,7 @@
 ## A command line tool for the Baruwa REST API
 
 [![Build Status](https://travis-ci.org/baruwa-enterprise/baruwactl.svg?branch=master)](https://travis-ci.org/baruwa-enterprise/baruwactl)
+[![Ci](https://github.com/baruwa-enterprise/baruwactl/workflows/Ci/badge.svg)](https://github.com/baruwa-enterprise/baruwactl/actions?query=workflow%3ACi)
 [![codecov](https://codecov.io/gh/baruwa-enterprise/baruwactl/branch/master/graph/badge.svg)](https://codecov.io/gh/baruwa-enterprise/baruwactl)
 [![Go Report Card](https://goreportcard.com/badge/github.com/baruwa-enterprise/baruwactl)](https://goreportcard.com/report/github.com/baruwa-enterprise/baruwactl)
 [![GoDoc](https://godoc.org/github.com/baruwa-enterprise/baruwactl?status.svg)](https://godoc.org/github.com/baruwa-enterprise/baruwactl)
@@ -11,7 +12,7 @@
 This tool provides commandline access to manage a [Baruwa](https://www.baruwa.com/)
 server via the [REST API](https://www.baruwa.com/docs/api/).
 
-It is built using the [Baruwa Golang bindings](https://github.com/baruwa-enterprise/baruwa-go).
+It is built using the [Baruwa Golang bindings](https://github.com/baruwa-enterprise/baruwactl).
 
 ```
 Usage: baruwactl -k -s COMMAND [arg...]
